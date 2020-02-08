@@ -5,8 +5,12 @@ import MapContainer from './map-container';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      selectedFlatId: 1
+    };
   }
+
+  clickFlat = () => {}
 
   render() {
     return (

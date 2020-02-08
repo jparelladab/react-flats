@@ -10,16 +10,12 @@ class FlatList extends Component {
   render() {
     return (
       <div className="flat-list">
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
-        <Flat />
+        <Flat id="1" />
+        <Flat id="2" />
+        <Flat id="3" />
+        <Flat id="4" />
+        <Flat id="5" />
+        <Flat id="6" />
       </div>
     );
   }
