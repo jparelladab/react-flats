@@ -10,12 +10,12 @@ class FlatList extends Component {
   render() {
     return (
       <div className="flat-list">
-        <Flat id="1" />
-        <Flat id="2" />
-        <Flat id="3" />
-        <Flat id="4" />
-        <Flat id="5" />
-        <Flat id="6" />
+        <Flat id="1" appState={this.props.appState} clickFunction={ this.props.clickFunction } />
+        <Flat id="2" appState={this.props.appState} clickFunction={ this.props.clickFunction } />
+        <Flat id="3" appState={this.props.appState} clickFunction={ this.props.clickFunction } />
+        <Flat id="4" appState={this.props.appState} clickFunction={ this.props.clickFunction } />
+        <Flat id="5" appState={this.props.appState} clickFunction={ this.props.clickFunction } />
+        <Flat id="6" appState={this.props.appState} clickFunction={ this.props.clickFunction } />
       </div>
     );
   }

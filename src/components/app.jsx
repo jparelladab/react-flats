@@ -6,16 +6,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedFlatId: 1
+      activeFlat: null
     };
   }
 
-  clickFlat = () => {}
+  selectFlat = (e) => {
+    this.setState({ activeFlat: e.target.id });
+  }
+
 
   render() {
     return (
       <div>
-        <FlatList />
+        <FlatList clickFunction={this.selectFlat} appState={ this.state.activeFlat} />
         <MapContainer />
       </div>
     );
